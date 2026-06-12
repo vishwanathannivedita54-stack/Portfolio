@@ -1,80 +1,121 @@
 <!DOCTYPE html>
-<html>
-     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio website of Nivedita V">
-        <meta name="author" content="Nivedita V">
-        <title>Nivedita Portfolio | Projects</title>
-        <link rel="stylesheet" href="style.css">
-     </head>
-     <body>
-            <header>
-                <h1><strong>My Projects</strong></h1>
-            </header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="project.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <main>
-                <section>
-                    <p>Project list</p>
-                     <div>
-                          <article>
-                               <h3>1.IOT-Based Smart Parking Management System</h3>
-                               <ul>
-                                    <li><strong>Problem:</strong>Parking spaces are hard to find due to increasing vehicles, limited parking areas, traffic congestion, and time wasted searching for slots.</li>
-                                    <li><strong>Solution:</strong>Uses ultrasonic sensors to detect vehicle presence, LEDs to show slot status, and a mobile app for real-time parking updates.</li>
-                                    <li><strong>Technologies</strong>
-                                         <ol>
-                                              <li>ESP8266 NodeMCU</li>
-                                              <li>HC-SR04 ultrasonic sensor</li>
-                                              <li>Arduino IDE(Embedded C)</li>
-                                              <li>Blynk IOT platform</li>
-                                         </ol>
-                                    </li>
-                                    <li><strong>Working:</strong>If the measured distance is less than 10 cm, the slot is occupied; otherwise, it is available. Status is shown through LEDs and the mobile app.</li>
-                                    <li><strong>Benefits:</strong> Saves time and fuel, reduces traffic congestion, low-cost, easy to install, and scalable for smart city applications. </li>
-                                    <li><strong>Future Enhancements:</strong>Online slot booking, automatic gate control, payment integration, notifications, and AI-based vehicle counting.</li>
-                                    <li><strong></strong>Improves parking management, reduces human effort, and supports smart city development.</li>
-                               </ul> 
-</p>
-                          </article>
-                    <div>
-                        <article>
-                            <h3>2. Personal Portfolio Website</h3>
-                            <p>
-                                This project is a personal portfolio website created using
-                                HTML5 and CSS. It includes Home, About, Projects and Contact pages.
-                            </p>
-                        </article>
-                    </div>
-                    <div>
-                        <article>
-                            <h3>3. Student Registration Form</h3>
-                            <p>
-                                A simple student registration form created using HTML form elements
-                                such as input, radio button, checkbox and submit button.
-                            </p>
-                        </article>
-                    </div>
-                    <div>
-                        <article>
-                            <h3>4. Form validation </h3>
-                            <p>
-                                A simple form validation implementation using JavaScript to ensure
-                                that the user inputs are valid before submitting the form.
-                            </p>
-                        </article>
-                    </div>
-                </section>
-            </main>
-            <footer>
-                <p>&copy; 2026 Nivedita V. All rights reserved.</p>
-            </footer>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Nivedita V">
+    <meta name="author" content="Nivedita V">
+    <title>Nivedita Portfolio | Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-     </body>
+<body>
 
+<header class="page-header">
+    <nav class="navbar">
+        <h2 class="logo">Nivedita V</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+    </nav>
+
+    <h1>My Projects</h1>
+</header>
+
+<main>
+    <section class="section">
+        <h2 class="section-title">Project List</h2>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <h3>IOT-Based Smart Parking Management System</h3>
+
+                <p>
+                    A smart parking solution that helps users find available
+                    parking slots using IoT sensors and real-time updates.
+                </p>
+
+                <ul>
+                    <li><strong>Problem:</strong> Difficulty in finding parking spaces.</li>
+                    <li><strong>Solution:</strong> Ultrasonic sensors detect vehicle presence.</li>
+                    <li><strong>Working:</strong> If distance is less than 10 cm, slot is occupied.</li>
+                    <li><strong>Benefits:</strong> Saves time, fuel, and reduces traffic congestion.</li>
+                </ul>
+
+                <h4>Technologies Used</h4>
+                <div class="tech-tags">
+                    <span>ESP8266</span>
+                    <span>HC-SR04</span>
+                    <span>Arduino IDE</span>
+                    <span>Blynk IoT</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio website created using
+                    HTML5, CSS3, Flexbox, CSS Grid, and media queries.
+                </p>
+
+                <div class="tech-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Responsive Design</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Student Registration Form</h3>
+
+                <p>
+                    A student registration form created using HTML form elements
+                    such as input, radio button, checkbox, and submit button.
+                </p>
+
+                <div class="tech-tags">
+                    <span>HTML</span>
+                    <span>Forms</span>
+                    <span>CSS</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Form Validation</h3>
+
+                <p>
+                    A simple form validation project using JavaScript to check
+                    user input before form submission.
+                </p>
+
+                <div class="tech-tags">
+                    <span>JavaScript</span>
+                    <span>Validation</span>
+                    <span>DOM</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Nivedita V. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
 </html>
